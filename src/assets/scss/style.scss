@@ -4,8 +4,17 @@ $green: #64a778;
 body {
   margin-bottom: 15px;
 }
-a, a:hover, a:focus, a:visited {
-  color: $green;
+
+ul li ul li {
+  list-style-type: circle;
+}
+
+.menu li a:hover {
+  text-decoration: none;
+}
+
+a, a:hover, a:focus, a:visitar
+  color: darken($green, 10%);
 }
 
 a:hover {
@@ -32,7 +41,7 @@ p.lead {
   font-size: 150%;
 }
 
-.callout, h1, h2, h3 {
+.callout, h1, h2, h3, h4, h5, h6 {
   color: darken($green, 20%);
 }
 
@@ -42,12 +51,15 @@ p.lead {
 
 @media print, screen and (min-width: 40em) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
   }
 }
