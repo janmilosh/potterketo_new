@@ -1,5 +1,3 @@
-{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
-
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -9,42 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
     <title>potterketogenic.diet</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li class="menu-text">Potter Dietitian Consulting</li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/diet.html">The Diet</a></li>
-        <li><a href="/programs.html">Programs</a></li>
-        <li><a href="/research.html">Research</a></li>
-      </ul>
-    </div>
-  </div>
-
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> body}}
+  {{> top_menu}}
+  {{> body}}
   <hr>
-  <div class="row column">
-    <ul class="menu">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/diet.html">The Diet</a></li>
-      <li><a href="/programs.html">Programs</a></li>
-      <li><a href="/research.html">Research</a></li>
-    </ul>
-  </div>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  {{> bottom_menu}}
   <script src="{{root}}assets/js/app.js"></script>
 </body>
 </html>

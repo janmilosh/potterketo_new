@@ -3,7 +3,6 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 // Global styles
 @include foundation-global-styles;
@@ -11,8 +10,8 @@
 @include foundation-typography;
 
 // Grids (choose one)
-@include foundation-xy-grid-classes;
-// @include foundation-grid;
+// @include foundation-xy-grid-classes;
+@include foundation-grid;
 // @include foundation-flex-grid;
 
 // Generic components
