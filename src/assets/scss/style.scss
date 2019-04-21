@@ -3,6 +3,9 @@ $green: #64a778;
 
 body {
   margin-bottom: 15px;
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Nunito', sans-serif;
 }
 
 ul li ul li {
@@ -41,8 +44,10 @@ p.lead {
   font-size: 150%;
 }
 
-.callout, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: darken($green, 20%);
+  // font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .top-padding {
@@ -53,7 +58,28 @@ p.lead {
   margin-top: 15px;
 }
 
+.vert-outer {
+  display: flex;
+  align-items: center;
+}
+
 @media print, screen and (min-width: 40em) {
+  .callout h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 4px 8px black;
+  }
+  .callout {
+    background: url("../img/background_all_food.jpg") no-repeat center center fixed;
+    background-size: cover;
+    h1 {
+      font-size: 3rem
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
   h1 {
     font-size: 2.4rem;
   }
