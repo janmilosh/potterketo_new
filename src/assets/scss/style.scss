@@ -5,15 +5,22 @@ body {
   margin-bottom: 15px;
   background: white;
   font-family: 'Open Sans', sans-serif;
-  // font-family: 'Nunito', sans-serif;
 }
 
 ul li ul li {
   list-style-type: circle;
 }
 
-.menu li a:hover {
+.menu li a:hover, .logo li a:hover {
   text-decoration: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+ul.logo {
+  margin: 5px 0;
 }
 
 a, a:hover, a:focus, a:visited {
@@ -24,29 +31,37 @@ a:hover {
   text-decoration: underline;
 }
 
+.button.primary, .button.primary:focus, .button.primary:hover {
+  color: white;
+}
+
+.button.hollow {
+  color: white;
+  border: 1px solid white;
+}
+
 .logo li a {
   font-size: 1.8em;
 }
 
-.top-bar, .top-bar ul {
-  background: $green;
+.title-bar, .title-bar ul {
+  background: white;
 }
 
-.top-bar a {
-  color: white;
+.title-bar a {
+  color: $green;
+}
+
+.top-menu {
+  border-bottom: 2px solid $green;
 }
 
 .bottom-menu li a {
   color: $green;
 }
 
-p.lead {
-  font-size: 150%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: darken($green, 20%);
-  // font-family: 'Nunito', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -63,18 +78,33 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-@media print, screen and (min-width: 40em) {
-  .callout h1 {
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    text-shadow: 2px 4px 8px black;
+.callout {
+  background: $green;
+  .button {
+    margin-top: 15px;
+  }
+}
+.callout h1, .callout h2 {
+  color: white;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 40em) {
+  .menu a {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .callout h1, .callout h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
   .callout {
-    background: url("../img/background_all_food.jpg") no-repeat center center fixed;
+    background: url("../img/background_cropped.jpg") no-repeat center center fixed;
     background-size: cover;
     h1 {
-      font-size: 3rem
+      font-size: 4rem
     }
     h2 {
       font-size: 2.5rem;
