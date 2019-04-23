@@ -48,18 +48,18 @@ a:hover {
   background: white;
 }
 
-.title-bar a {
-  color: $green;
-}
+// .title-bar a {
+//   color: $green;
+// }
 
 .top-menu {
   border-bottom: 2px solid $green;
   align-items: center;
 }
 
-.bottom-menu li a {
-  color: $green;
-}
+// .bottom-menu li a {
+//   color: $green;
+// }
 
 h1, h2, h3, h4, h5, h6 {
   color: darken($green, 10%);
@@ -102,10 +102,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 40em) {
   .callout h1, .callout h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(10, 39, 24, 0.7);
   }
   .callout {
-    background: url("../img/background_cropped.jpg") no-repeat center center;
+    background: url("../img/avocado_background.png") no-repeat center center;
     background-size: cover;
     h1 {
       font-size: 4rem
