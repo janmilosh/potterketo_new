@@ -1,5 +1,5 @@
 $offWhite: #f1f1f1;
-$green: #64a778;
+$green: #28a939;
 
 body {
   margin-bottom: 15px;
@@ -41,7 +41,7 @@ a:hover {
 }
 
 .logo li a {
-  font-size: 1.8em;
+  font-size: 2.2em;
 }
 
 .title-bar, .title-bar ul {
@@ -54,6 +54,7 @@ a:hover {
 
 .top-menu {
   border-bottom: 2px solid $green;
+  align-items: center;
 }
 
 .bottom-menu li a {
@@ -61,7 +62,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: darken($green, 20%);
+  color: darken($green, 10%);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -79,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .callout {
-  background: $green;
+  background: darken($green, 7%);
   .button {
     margin-top: 15px;
   }
@@ -94,6 +95,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 7px;
     padding-right: 7px;
   }
+  .callout.large {
+    padding: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -101,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
   .callout {
-    background: url("../img/background_cropped.jpg") no-repeat center center fixed;
+    background: url("../img/background_cropped.jpg") no-repeat center center;
     background-size: cover;
     h1 {
       font-size: 4rem
@@ -111,15 +115,15 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.6rem;
-  }
-  h3 {
     font-size: 1.4rem;
   }
-  h4 {
+  h3 {
     font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
   }
 }
