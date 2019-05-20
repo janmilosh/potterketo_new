@@ -1,5 +1,6 @@
 $offWhite: #f1f1f1;
 $green: #28a939;
+$light-gray: #d6d2d2;
 
 body {
   margin-bottom: 15px;
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .orbit {
-  padding: 20px;
+  padding: 30px;
 }
 
 .orbit blockquote {
@@ -97,6 +98,25 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     color: #546d58;
   }
+}
+
+button.orbit-previous, button.orbit-next {
+  color: $light-gray;
+  font-size: 200%;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover {
+  cursor: pointer;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-next:active,
+.orbit-previous:focus,
+.orbit-next:focus {
+    background-color: rgba(256,256,256,0);
 }
 
 @media screen and (max-width: 40em) {
