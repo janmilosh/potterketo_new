@@ -1,6 +1,7 @@
 $offWhite: #f1f1f1;
 $green: #28a939;
 $light-gray: #d6d2d2;
+$heading-gray: #777;
 
 body {
   margin-bottom: 15px;
@@ -59,7 +60,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: darken($green, 10%);
+  color: $heading-gray;
+  // color: darken($green, 10%);
   font-family: 'Open Sans', sans-serif;
 }
 
