@@ -60,7 +60,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-gray;
+  // color: $heading-gray;
   // color: darken($green, 10%);
   font-family: 'Open Sans', sans-serif;
 }
@@ -78,13 +78,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.callout {
+.callout.large {
   background: darken($green, 7%);
   .button {
     margin-top: 15px;
   }
 }
-.callout h1, .callout h2 {
+.callout.large h1, .callout.large h2 {
   color: white;
   font-weight: bolder;
 }
@@ -132,10 +132,10 @@ button.orbit-previous, button.orbit-next {
 }
 
 @media screen and (min-width: 40em) {
-  .callout h1, .callout h2 {
+  .callout.large h1, .callout.large h2 {
     color: lighten($green, 5%);
   }
-  .callout {
+  .callout.large {
     background: url("../img/avocado_background2.png") no-repeat center center;
     background-size: cover;
     h1 {
