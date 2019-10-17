@@ -1,7 +1,8 @@
 $offWhite: #f1f1f1;
-$green: #28a939;
+$green: #5bab66;
 $light-gray: #d6d2d2;
 $heading-gray: #777;
+$purple: #7467bb;
 
 body {
   margin-bottom: 15px;
@@ -30,7 +31,7 @@ ul.logo {
 }
 
 a, a:hover, a:focus, a:visited {
-  color: darken($green, 10%);
+  color: $green;
 }
 
 a:hover {
@@ -41,8 +42,18 @@ a:hover {
   border: none;
 }
 
+.card-divider {
+  background: $purple;
+  color: white;
+}
+
 .button.primary, .button.primary:focus, .button.primary:hover {
   color: white;
+}
+
+.button.hollow.primary:hover, .button.hollow.primary:focus {
+  border-color: darken($green, 10%);
+  color: darken($green, 10%);
 }
 
 .button.hollow {
@@ -64,12 +75,12 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-gray;
+  color: $purple;
   // color: darken($green, 10%);
   font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
+h1, h2 {
   margin-bottom: 1.2rem;
 }
 
@@ -87,7 +98,7 @@ h2 {
 }
 
 .callout.large {
-  background: darken($green, 7%);
+  background: darken($green, 5%);
   .button {
     margin-top: 15px;
   }
