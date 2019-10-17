@@ -37,6 +37,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.thumbnail {
+  border: none;
+}
+
 .button.primary, .button.primary:focus, .button.primary:hover {
   color: white;
 }
@@ -60,9 +64,13 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  // color: $heading-gray;
+  color: $heading-gray;
   // color: darken($green, 10%);
   font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
 }
 
 .top-padding {
@@ -146,7 +154,7 @@ button.orbit-previous, button.orbit-next {
     }
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2 {
     font-size: 1.4rem;
