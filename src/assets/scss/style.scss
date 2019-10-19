@@ -1,8 +1,10 @@
 $offWhite: #f1f1f1;
-$green: #5bab66;
-$light-gray: #d6d2d2;
+$green: #518c59;
+$light-gray: #999;
 $heading-gray: #777;
-$purple: #7467bb;
+$purple: #574a9c;
+$dark-purple: darken($purple, 13%);
+$gray: #546d58;
 
 body {
   margin-bottom: 15px;
@@ -18,8 +20,12 @@ ul li ul li {
   list-style-type: circle;
 }
 
-.menu li a:hover, .logo li a:hover {
-  text-decoration: none;
+.menu {
+  text-align: center;
+  li a, li a:hover, li a:focus {
+    color: $dark-purple;
+    text-decoration: none;
+  }
 }
 
 .logo {
@@ -28,6 +34,10 @@ ul li ul li {
 
 ul.logo {
   margin: 5px 0;
+  li a, li a:hover, li a:focus {
+    color: $dark-purple;
+    text-decoration: none;
+  }
 }
 
 a, a:hover, a:focus, a:visited {
@@ -63,6 +73,8 @@ a:hover {
 
 .logo li a {
   font-size: 2.2em;
+  color: $dark-purple;
+  font-weight: 300;
 }
 
 .title-bar, .title-bar ul {
@@ -70,13 +82,13 @@ a:hover {
 }
 
 .top-menu {
-  border-bottom: 2px solid $green;
+  border-bottom: 4px solid lighten($green, 10%);
   align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $purple;
-  // color: darken($green, 10%);
+  color: $dark-purple;
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -103,9 +115,10 @@ h1, h2 {
     margin-top: 15px;
   }
 }
+
 .callout.large h1, .callout.large h2 {
   color: white;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .orbit {
@@ -117,7 +130,7 @@ h1, h2 {
   border-left: none;
   p {
     font-style: italic;
-    color: #546d58;
+    color: $gray;
   }
 }
 
@@ -158,10 +171,10 @@ button.orbit-previous, button.orbit-next {
     background: url("../img/avocado_background2.png") no-repeat center center;
     background-size: cover;
     h1 {
-      font-size: 3.5rem
+      font-size: 3rem
     }
     h2 {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
   h1 {
