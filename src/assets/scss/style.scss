@@ -5,6 +5,7 @@ $heading-gray: #777;
 $purple: #574a9c;
 $dark-purple: darken($purple, 13%);
 $gray: #546d58;
+$dark-gray: #444;
 
 body {
   margin-bottom: 15px;
@@ -23,7 +24,7 @@ ul li ul li {
 .menu {
   text-align: center;
   li a, li a:hover, li a:focus {
-    color: $dark-purple;
+    color: $dark-gray;
     text-decoration: none;
   }
 }
@@ -35,7 +36,7 @@ ul li ul li {
 ul.logo {
   margin: 5px 0;
   li a, li a:hover, li a:focus {
-    color: $dark-purple;
+    color: $dark-gray;
     text-decoration: none;
   }
 }
@@ -53,7 +54,7 @@ a:hover {
 }
 
 .card-divider {
-  background: $purple;
+  background: darken($green, 12%);
   color: white;
 }
 
@@ -73,7 +74,7 @@ a:hover {
 
 .logo li a {
   font-size: 2.2em;
-  color: $dark-purple;
+  // color: $dark-purple;
   font-weight: 300;
 }
 
@@ -87,7 +88,6 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $dark-purple;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
 }
