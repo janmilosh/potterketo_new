@@ -13118,7 +13118,11 @@ window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; // require('found
 // the line below
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation(); // document.getElementById('year').textContent() = "2000"
+
+var year = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#year');
+var now = new Date();
+year.text(now.getFullYear());
 
 /***/ }),
 

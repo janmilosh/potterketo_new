@@ -8,7 +8,6 @@ $gray: #546d58;
 $dark-gray: #444;
 
 body {
-  margin-bottom: 15px;
   background: white;
   font-family: 'Open Sans', sans-serif;
 }
@@ -85,6 +84,7 @@ a:hover {
 .top-menu {
   border-bottom: 4px solid lighten($green, 10%);
   align-items: center;
+  padding-bottom: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -151,6 +151,29 @@ button.orbit-previous, button.orbit-next {
 .orbit-previous:focus,
 .orbit-next:focus {
     background-color: rgba(256,256,256,0);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: $green;
+  color: white;
+  .button {
+    margin: 1rem 0;
+  }
+  p {
+    text-align: center;
+    margin: 0.8rem 0 1rem;
+  }
+  a, a:hover, a:focus, a:visited {
+    color: white;
+  }
+  .menu li a {
+    font-size: 0.8rem;
+  }
+  .menu li a, .menu li a:hover, .menu li a:focus {
+    color: white;
+  }
 }
 
 @media screen and (max-width: 40em) {
