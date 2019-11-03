@@ -40,7 +40,7 @@ foundation new --framework sites --template zurb
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-Now `cd` to your project name and to start your project run 
+Now `cd` to your project name and to start your project run
 
 ```bash
 foundation watch
@@ -68,3 +68,9 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `yarn run build`.
+
+After committing changes (regardless of what branch you're on), you can publish what's in the dist folder:
+
+```
+git subtree push --prefix dist origin gh-pages
+```

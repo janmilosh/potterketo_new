@@ -15,3 +15,9 @@ import './lib/foundation-explicit-pieces';
 
 
 $(document).foundation();
+
+// document.getElementById('year').textContent() = "2000"
+
+let year = $('#year');
+var now = new Date();
+year.text(now.getFullYear());

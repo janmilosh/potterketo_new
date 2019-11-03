@@ -1,10 +1,13 @@
 $offWhite: #f1f1f1;
-$green: #28a939;
-$light-gray: #d6d2d2;
+$green: #518c59;
+$light-gray: #999;
 $heading-gray: #777;
+$purple: #574a9c;
+$dark-purple: darken($purple, 13%);
+$gray: #546d58;
+$dark-gray: #444;
 
 body {
-  margin-bottom: 15px;
   background: white;
   font-family: 'Open Sans', sans-serif;
 }
@@ -17,8 +20,12 @@ ul li ul li {
   list-style-type: circle;
 }
 
-.menu li a:hover, .logo li a:hover {
-  text-decoration: none;
+.menu {
+  text-align: center;
+  li a, li a:hover, li a:focus {
+    color: $dark-gray;
+    text-decoration: none;
+  }
 }
 
 .logo {
@@ -27,18 +34,36 @@ ul li ul li {
 
 ul.logo {
   margin: 5px 0;
+  li a, li a:hover, li a:focus {
+    color: $dark-gray;
+    text-decoration: none;
+  }
 }
 
 a, a:hover, a:focus, a:visited {
-  color: darken($green, 10%);
+  color: $green;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+.thumbnail {
+  border: none;
+}
+
+.card-divider {
+  background: darken($green, 12%);
+  color: white;
+}
+
 .button.primary, .button.primary:focus, .button.primary:hover {
   color: white;
+}
+
+.button.hollow.primary:hover, .button.hollow.primary:focus {
+  border-color: darken($green, 10%);
+  color: darken($green, 10%);
 }
 
 .button.hollow {
@@ -48,6 +73,8 @@ a:hover {
 
 .logo li a {
   font-size: 2.2em;
+  // color: $dark-purple;
+  font-weight: 300;
 }
 
 .title-bar, .title-bar ul {
@@ -55,14 +82,18 @@ a:hover {
 }
 
 .top-menu {
-  border-bottom: 2px solid $green;
+  border-bottom: 4px solid lighten($green, 10%);
   align-items: center;
+  padding-bottom: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-gray;
-  // color: darken($green, 10%);
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  margin-bottom: 1.2rem;
 }
 
 .top-padding {
@@ -70,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-margin {
-  margin-top: 15px;
+  margin-top: 22px;
 }
 
 .vert-outer {
@@ -78,15 +109,16 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.callout {
-  background: darken($green, 7%);
+.callout.large {
+  background: darken($green, 5%);
   .button {
     margin-top: 15px;
   }
 }
-.callout h1, .callout h2 {
+
+.callout.large h1, .callout.large h2 {
   color: white;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .orbit {
@@ -98,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left: none;
   p {
     font-style: italic;
-    color: #546d58;
+    color: $gray;
   }
 }
 
@@ -121,6 +153,29 @@ button.orbit-previous, button.orbit-next {
     background-color: rgba(256,256,256,0);
 }
 
+.footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: $green;
+  color: white;
+  .button {
+    margin: 1rem 0;
+  }
+  p {
+    text-align: center;
+    margin: 0.8rem 0 1rem;
+  }
+  a, a:hover, a:focus, a:visited {
+    color: white;
+  }
+  .menu li a {
+    font-size: 0.8rem;
+  }
+  .menu li a, .menu li a:hover, .menu li a:focus {
+    color: white;
+  }
+}
+
 @media screen and (max-width: 40em) {
   .menu a {
     padding-left: 7px;
@@ -132,21 +187,21 @@ button.orbit-previous, button.orbit-next {
 }
 
 @media screen and (min-width: 40em) {
-  .callout h1, .callout h2 {
+  .callout.large h1, .callout.large h2 {
     color: lighten($green, 5%);
   }
-  .callout {
-    background: url("../img/avocado_background2.png") no-repeat center center;
+  .callout.large {
+    background: url("../img/avocado_background_circular_cropped.jpg") no-repeat center center;
     background-size: cover;
     h1 {
-      font-size: 3.5rem
+      font-size: 3rem
     }
     h2 {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2 {
     font-size: 1.4rem;
